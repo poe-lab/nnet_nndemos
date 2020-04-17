@@ -1,69 +1,101 @@
-% Neural Network Demonstrations and Applications
-% ----------------------------------------------
+% Neural Network Datasets
+% -----------------------
 %
-% Function Fitting and Approximation
-%   fit_house_demo - House price estimation.
+% Function Fitting, Function approximation and Curve fitting.
+%
+% Function fitting is the process of training a neural network on a
+% set of inputs in order to produce an associated set of target outputs.
+% Once the neural network has fit the data, it forms a generalization of
+% the input-output relationship and can be used to generate outputs for
+% inputs it was not trained on.
+%
+%  simplefit_dataset     - Simple fitting dataset.
+%  abalone_dataset       - Abalone shell rings dataset.
+%  bodyfat_dataset       - Body fat percentage dataset.
+%  building_dataset      - Building energy dataset.
+%  chemical_dataset      - Chemical sensor dataset.
+%  cho_dataset           - Cholesterol dataset.
+%  engine_dataset        - Engine behavior dataset.
+%  house_dataset         - House value dataset.
+%  vinyl_dataset         - Vinyl bromide dataset.
+%
+% ----------
 %
 % Pattern Recognition and Classification
-%   classify_crab_demo   - Crab classification.
-%   classify_wine_demo   - Wine classification.
-%   cancerdetectdemonnet - Cancer detection.
 %
-% Clustering
-%   cluster_iris_demo - Iris clustering.
-%   yeastdemonnet     - Yeast clustering.
+% Pattern recognition is the process of training a neural network to assign
+% the correct target classes to a set of input patterns.  Once trained the
+% network can be used to classify patterns it has not seen before.
 %
-% Dynamic Modeling and Prediction
-%   model_maglev_demo - Maglev modeling.
+%  simpleclass_dataset     - Simple pattern recognition dataset.
+%  cancer_dataset          - Breast cancer dataset.
+%  crab_dataset            - Crab gender dataset.
+%  glass_dataset           - Glass chemical dataset.
+%  iris_dataset            - Iris flower dataset.
+%  ovarian_dataset         - Ovarian cancer dataset.
+%  thyroid_dataset         - Thyroid function dataset.
+%  wine_dataset            - Italian wines dataset.
+%  digitTrain4DArrayData   - Synthetic handwritten digit dataset for
+%                            training in form of 4-D array.
+%  digitTrainCellArrayData - Synthetic handwritten digit dataset for
+%                            training in form of cell array.
+%  digitTest4DArrayData    - Synthetic handwritten digit dataset for
+%                            testing in form of 4-D array.
+%  digitTestCellArrayData  - Synthetic handwritten digit dataset for
+%                            testing in form of cell array.
+%  digitSmallCellArrayData - Subset of the synthetic handwritten digit 
+%                            dataset for training in form of cell array.
 %
-% Simulink & Control
-%   predcstr     - Predictive control of a tank reactor.
-%   narmamaglev  - NARMA-L2 control of a magnet levitation system.
-%   mrefrobotarm - Reference control of a robot arm.
+% ----------
 %
-% Self-Organizing Networks
-%   democ1  - Competitive learning.
-%   demosm1 - One-dimensional self-organizing map.
-%   demosm2 - Two-dimensional self-organizing map.
+% Clustering, Feature extraction and Data dimension reduction
 %
-% Adaptive Linear Filters
-%   demolin1 - Pattern association showing error surface.
-%   demolin2 - Training a linear neuron.
-%   demolin4 - Linear fit of nonlinear problem.
-%   demolin5 - Underdetermined problem.
-%   demolin6 - Linearly dependent problem.
-%   demolin7 - Too large a learning rate. 
-%   demolin8 - Adaptive noise cancellation.
+% Clustering is the process of training a neural network on patterns
+% so that the network comes up with its own classifications according
+% to pattern similarity and relative topology.  This is useful for gaining
+% insight into data, or simplifying it before further processing.
 %
-% Radial Basis Networks
-%   demorb1  - Radial basis approximation.
-%   demorb3  - Radial basis underlapping neurons.
-%   demorb4  - Radial basis overlapping neurons.
-%   demogrn1 - GRNN function approximation.
-%   demopnn1 - PNN classification.
+%  simplecluster_dataset - Simple clustering dataset.
+% 
+% The inputs of fitting or pattern recognition datasets may also clustered.
 %
-% Learning Vector Quantization
-%   demolvq1 - Learning vector quantization.
+% ----------
 %
-% Simple Applications
-%   applin1 - Linear design.
-%   applin2 - Adaptive linear prediction.
-%   appcr1  - Character recognition.
+% Input-Output Time-Series Prediction, Forecasting, Dynamic modeling
+% Nonlinear autoregression, System identification and Filtering
 %
-% Hopfield Networks
-% Historically relevant, not recommended for practical problems.
-%   demohop1 - Hopfield two neuron design.
-%   demohop2 - Hopfield unstable equilibria.
-%   demohop3 - Hopfield three neuron design.
-%   demohop4 - Hopfield spurious stable points.
+% Input-output time series problems consist of predicting the next value
+% of one time-series given another time-series. Past values of both series
+% (for best accuracy), or only one of the series (for a simpler system)
+% may be used to predict the target series.
 %
-% Perceptrons (Historical 
-% Historically relevant, not recommended for practical problems.
-%   demop1 - Classification with a 2-input perceptron.
-%   demop4 - Outlier input vectors.
-%   demop5 - Normalized perceptron rule
-%   demop6 - Linearly non-separable vectors.
+%  simpleseries_dataset  - Simple time-series prediction dataset.
+%  simplenarx_dataset    - Simple time-series prediction dataset.
+%  exchanger_dataset     - Heat exchanger dataset.
+%  maglev_dataset        - Magnetic levitation dataset.
+%  ph_dataset            - Solution PH dataset.
+%  pollution_dataset     - Pollution mortality dataset.
+%  refmodel_dataset      - Reference model dataset
+%  robotarm_dataset      - Robot arm dataset
+%  valve_dataset         - Valve fluid flow dataset.
 %
-% See also NNDATASETS, NNTEXTDEMOS, NNTEXTBOOK.
+% ----------
+%
+% Single Time-Series Prediction, Forecasting, Dynamic modeling,
+% Nonlinear autoregression, System identification, and Filtering
+%
+% Single time-series prediction involves predicting the next value of
+% a time-series given its past values.
+%
+%  simplenar_dataset     - Simple single series prediction dataset.
+%  chickenpox_dataset    - Monthly chickenpox instances dataset.
+%  ice_dataset           - Global ice volume dataset.
+%  laser_dataset         - Chaotic far-infrared laser dataset.
+%  oil_dataset           - Monthly oil price dataset.
+%  river_dataset         - River flow dataset.
+%  solar_dataset         - Sunspot activity dataset
+%
+% See also NNDEMOS, NNTEXTDEMOS, NNTEXTBOOK.
 
-% Copyright 1992-2011 The MathWorks, Inc.
+% Copyright 2010-2015 The MathWorks, Inc.
+
